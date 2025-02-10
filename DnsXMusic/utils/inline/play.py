@@ -39,56 +39,16 @@ def get_progress_bar(percentage):
     else:
         return "───────────"
     buttons = [
-        [
-            InlineKeyboardButton(
-                text=f"{bare}",
-                callback_data="GetTimer",
-            )
-        ],
           [
             InlineKeyboardButton(
-                text="𝐔ρ𝖽αтєѕ", url=f"https://t.me/Dns_Official_Channel"
+                text="𝐔ρ𝖽αтєѕ", url=f"https://t.me/saragamaupdate"
             ),
             InlineKeyboardButton(text=_["CLOSEMENU_BUTTON"], callback_data="𝖢𝗅𝗈𝗌𝖾"
           ),
          
         
             InlineKeyboardButton(
-                text="𝐒υρρσɾƚ", url=f"https://t.me/DNS_NETWORK"),
-        ],
-    ]
-    return buttons
-
-
-def stream_markup(_, videoid, chat_id):
-    buttons = [
-          [
-            InlineKeyboardButton(
-                text="𝐔ρ𝖽αтєѕ", url=f"https://t.me/Dns_Official_Channel"
-            ),
-            InlineKeyboardButton(text=_["CLOSEMENU_BUTTON"], callback_data="𝖢𝗅𝗈𝗌𝖾"
-          ),
-         
-        
-            InlineKeyboardButton(
-                text="𝐒υρρσɾƚ", url=f"https://t.me/DNS_NETWORK"),
-        ],
-    ]
-    return buttons
-
-
-def telegram_markup(_, chat_id):
-    buttons = [
-          [
-            InlineKeyboardButton(
-                text="𝐔ρ𝖽αтєѕ", url=f"https://t.me/Dns_Official_Channel"
-            ),
-            InlineKeyboardButton(text=_["CLOSEMENU_BUTTON"], callback_data="𝖢𝗅𝗈𝗌𝖾"
-          ),
-         
-        
-            InlineKeyboardButton(
-                text="𝐒υρρσɾƚ", url=f"https://t.me/DNS_NETWORK"),
+                text="𝐒υρρσɾƚ", url=f"https://t.me/Saregama_Music_Support"),
         ],
     ]
     return buttons
