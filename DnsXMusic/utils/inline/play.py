@@ -13,9 +13,11 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 from DnsXMusic.utils.formatters import time_to_seconds
 
-def get_progress_bar(percentage):
+def stream_markup_timer(_, chat_id, played, dur):
+    played_sec = time_to_seconds(played)
+    duration_sec = time_to_seconds(dur)
+    percentage = (played_sec / duration_sec) * 100
     umm = math.floor(percentage)
-
     if 0 < umm <= 10:
         return "⚪─────────"
     elif 10 < umm <= 20:
@@ -67,14 +69,14 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         ],
           [
             InlineKeyboardButton(
-                text="𝐔ρ𝖽αтєѕ", url=f"https://t.me/Dns_Official_Channel"
+                text="𝐔ρ𝖽αтєѕ", url=f"https://t.me/saragamaupdate"
             ),
             InlineKeyboardButton(text=_["CLOSEMENU_BUTTON"], callback_data="𝖢𝗅𝗈𝗌𝖾"
           ),
          
         
             InlineKeyboardButton(
-                text="𝐒υρρσɾƚ", url=f"https://t.me/DNS_NETWORK"),
+                text="𝐒υρρσɾƚ", url=f"https://t.me/Saregama_Music_Support"),
         ],
     ]
     return buttons
@@ -84,14 +86,14 @@ def stream_markup(_, videoid, chat_id):
     buttons = [
           [
             InlineKeyboardButton(
-                text="𝐔ρ𝖽αтєѕ", url=f"https://t.me/Dns_Official_Channel"
+                text="𝐔ρ𝖽αтєѕ", url=f"https://t.me/saragamaupdate"
             ),
             InlineKeyboardButton(text=_["CLOSEMENU_BUTTON"], callback_data="𝖢𝗅𝗈𝗌𝖾"
           ),
          
         
             InlineKeyboardButton(
-                text="𝐒υρρσɾƚ", url=f"https://t.me/DNS_NETWORK"),
+                text="𝐒υρρσɾƚ", url=f"https://t.me/Saregama_Music_Support"),
         ],
     ]
     return buttons
@@ -125,14 +127,14 @@ def telegram_markup_timer(_, chat_id, played, dur):
         ],
           [
             InlineKeyboardButton(
-                text="𝐔ρ𝖽αтєѕ", url=f"https://t.me/Dns_Official_Channel"
+                text="𝐔ρ𝖽αтєѕ", url=f"https://t.me/saragamaupdate"
             ),
             InlineKeyboardButton(text=_["CLOSEMENU_BUTTON"], callback_data="𝖢𝗅𝗈𝗌𝖾"
           ),
          
         
             InlineKeyboardButton(
-                text="𝐒υρρσɾƚ", url=f"https://t.me/DNS_NETWORK"),
+                text="𝐒υρρσɾƚ", url=f"https://t.me/Saregama_Music_Support"),
         ],
     ]
     return buttons
@@ -142,14 +144,14 @@ def telegram_markup(_, chat_id):
     buttons = [
           [
             InlineKeyboardButton(
-                text="𝐔ρ𝖽αтєѕ", url=f"https://t.me/Dns_Official_Channel"
+                text="𝐔ρ𝖽αтєѕ", url=f"https://t.me/saragamaupdate"
             ),
             InlineKeyboardButton(text=_["CLOSEMENU_BUTTON"], callback_data="𝖢𝗅𝗈𝗌𝖾"
           ),
          
         
             InlineKeyboardButton(
-                text="𝐒υρρσɾƚ", url=f"https://t.me/DNS_NETWORK"),
+                text="𝐒υρρσɾƚ", url=f"https://t.me/Saregama_Music_Support"),
         ],
     ]
     return buttons
