@@ -77,47 +77,6 @@ def stream_markup(_, videoid, chat_id):
     return buttons
 
 
-def telegram_markup_timer(_, chat_id, played, dur):
-    played_sec = time_to_seconds(played)
-    duration_sec = time_to_seconds(dur)
-    percentage = (played_sec / duration_sec) * 100
-    bar = get_progress_bar(percentage)  # using for getting the bar
-    bare = get_progress_bare(percentage)
-    baree = get_progress_baree(percentage)
-    buttons = [
-        [
-            InlineKeyboardButton(
-                text=f"{baree}",
-                callback_data="GetTimer",
-            )
-        ],
-        [
-            InlineKeyboardButton(
-                text=f"{played} {bar} {dur}",
-                callback_data="GetTimer",
-            )
-        ],
-        [
-            InlineKeyboardButton(
-                text=f"{bare}",
-                callback_data="GetTimer",
-            )
-        ],
-          [
-            InlineKeyboardButton(
-                text="𝐔ρ𝖽αтєѕ", url=f"https://t.me/Dns_Official_Channel"
-            ),
-            InlineKeyboardButton(text=_["CLOSEMENU_BUTTON"], callback_data="𝖢𝗅𝗈𝗌𝖾"
-          ),
-         
-        
-            InlineKeyboardButton(
-                text="𝐒υρρσɾƚ", url=f"https://t.me/DNS_NETWORK"),
-        ],
-    ]
-    return buttons
-
-
 def telegram_markup(_, chat_id):
     buttons = [
           [
