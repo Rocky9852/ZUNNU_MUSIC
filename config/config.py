@@ -53,7 +53,7 @@ EXTRA_PLUGINS = getenv(
 
 EXTRA_PLUGINS_REPO = getenv(
     "EXTRA_PLUGINS_REPO",
-    "https://github.com/Rocky9852/Extra_plugins",
+    "https://github.com/Rocky9852/FCC_repo",
 )
 # Fill here the external plugins repo where plugins that you want to load
 
