@@ -9,7 +9,7 @@
 #
 from pyrogram import filters
 from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup
-from RessoMusic import app
+from DnsXMusic import app
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery, Message, User
 from pyrogram.errors import ChatAdminRequired, UserNotParticipant, ChatWriteForbidden, PeerIdInvalid, ChatAdminRequired
 from pyrogram.enums import ChatAction, ChatType, MessageEntityType
