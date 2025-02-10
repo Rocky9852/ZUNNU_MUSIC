@@ -14,7 +14,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQ
 from pyrogram.errors import ChatAdminRequired, UserNotParticipant, ChatWriteForbidden, PeerIdInvalid, ChatAdminRequired
 from pyrogram.enums import ChatAction, ChatType, MessageEntityType
 from pyrogram import Client, filters, enums
-from RessoMusic.misc import SUDOERS
+from DnsXMusic.misc import SUDOERS
 
 buttons = [
     [
